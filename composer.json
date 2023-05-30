@@ -29,5 +29,10 @@
     "psr-4": {
       "MH83\\Amqp\\Test\\": "tests"
     }
+  },
+  "extra": {
+    "branch-alias": {
+      "main": "0.1.0"
+    }
   }
 }
