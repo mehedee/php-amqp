@@ -4,7 +4,7 @@
   "keywords": [
     "amqp", "rabbitmq", "queue"
   ],
-  "homepage": "https://github.com/swader/diffbot_client",
+  "homepage": "https://github.com/mehedee/php-amqp/tree/main",
   "license": "gpl-3.0",
   "authors": [
     {
