@@ -30,5 +30,7 @@
       "MH83\\Amqp\\Test\\": "tests"
     }
   },
-  "version": "0.0.1"
+  "version": "0.0.1",
+  "minimum-stability": "stable",
+  "prefer-stable": true
 }
