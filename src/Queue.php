@@ -63,7 +63,7 @@ class Queue
     {
         try {
             $this->channel->queue_declare($this->queue_name, false, $durable, false, false);
-            $this->channel->basic_consume($this->queue_name, '', false, true, false, false, $callback);
+            $this->channel->basic_consume($this->queue_name, '', false, false, false, false, $callback);
             while ($this->channel->is_consuming()) {
                 $this->channel->wait();
             }
