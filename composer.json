@@ -4,8 +4,8 @@
   "keywords": [
     "amqp", "rabbitmq", "queue"
   ],
-  "homepage": "https://github.com/swader/diffbot_client",
-  "license": "gpl-3.0",
+  "homepage": "https://github.com/mehedee/php-amqp/tree/main",
+  "license": "gpl-3.0-only",
   "authors": [
     {
       "name": "Mehedee Hasan",
@@ -28,11 +28,6 @@
   "autoload-dev": {
     "psr-4": {
       "MH83\\Amqp\\Test\\": "tests"
-    }
-  },
-  "extra": {
-    "branch-alias": {
-      "dev-master": "1.0-dev"
     }
   }
 }
