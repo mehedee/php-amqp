@@ -59,11 +59,11 @@ class Queue
     /**
      * @throws Exception
      */
-    public function consume($callback, $durable = true)
+    public function consume($callback, $durable = true, $noAck = false)
     {
         try {
             $this->channel->queue_declare($this->queue_name, false, $durable, false, false);
-            $this->channel->basic_consume($this->queue_name, '', false, false, false, false, $callback);
+            $this->channel->basic_consume($this->queue_name, '', false, $noAck, false, false, $callback);
             while ($this->channel->is_consuming()) {
                 $this->channel->wait();
             }
