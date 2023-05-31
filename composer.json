@@ -15,7 +15,7 @@
   ],
   "require": {
     "php" : ">=7.0.0",
-    "php-amqplib/php-amqplib": "^v2.12"
+    "php-amqplib/php-amqplib": "v2.* ||v1.*"
   },
   "require-dev": {
 
