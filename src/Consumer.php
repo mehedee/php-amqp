@@ -39,6 +39,7 @@ class Consumer extends Core
             }
 
             $this->shutdown();
+            
         } catch (Exception $e) {
             throw new Exception($e->getMessage());
         }
