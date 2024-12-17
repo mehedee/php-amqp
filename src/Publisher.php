@@ -29,7 +29,9 @@ class Publisher extends Core
             if (!$this->connection->isConnected()) {
                 $this->connection->reconnect();
             }
+            $this->channel->exchange_declare($this->exchange_name, 'direct', false, $durable, false);
             $this->channel->queue_declare($this->queue_name, false, $durable, false, false);
+            $this->channel->queue_bind($this->queue_name, $this->exchange_name, $this->routingKey);
             $messageType = gettype($message);
             if ($messageType == 'array' || $messageType == 'object') {
                 $message = json_encode($message);
